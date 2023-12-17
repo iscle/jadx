@@ -1,6 +1,6 @@
 <component name="ProjectRunConfigurationManager">
 	<configuration default="false" name="jadx-gui" type="Application" factoryName="Application">
-		<option name="MAIN_CLASS_NAME" value="jadx.gui.JadxGUI"/>
+		<option name="MAIN_CLASS_NAME" value="jadx.gui.JadxGuiKt"/>
 		<module name="jadx.jadx-gui.main"/>
 		<option name="PROGRAM_PARAMETERS" value="-v"/>
 		<option name="VM_PARAMETERS"

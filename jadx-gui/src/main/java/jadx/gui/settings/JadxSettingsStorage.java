@@ -5,13 +5,13 @@ import java.nio.file.Files;
 import java.nio.file.Path;
 import java.util.prefs.Preferences;
 
+import jadx.gui.JadxGuiKt;
 import org.jetbrains.annotations.Nullable;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 
 import jadx.core.utils.StringUtils;
 import jadx.core.utils.files.FileUtils;
-import jadx.gui.JadxGUI;
 import jadx.gui.utils.files.JadxFiles;
 
 /**
@@ -46,7 +46,7 @@ public class JadxSettingsStorage {
 
 	private static void copyFromPreferences(Path confPath) {
 		try {
-			Preferences prefs = Preferences.userNodeForPackage(JadxGUI.class);
+			Preferences prefs = Preferences.userNodeForPackage(JadxGuiKt.class);
 			String str = prefs.get("jadx.gui.settings", "");
 			if (StringUtils.notEmpty(str)) {
 				FileUtils.writeFile(confPath, str);
