@@ -57,7 +57,7 @@ tasks.test {
 
 application {
 	applicationName = ("jadx-gui")
-	mainClass.set("jadx.gui.JadxGUI")
+	mainClass.set("jadx.gui.JadxGuiKt")
 	applicationDefaultJvmArgs =
 		listOf(
 			"-Xms128M",

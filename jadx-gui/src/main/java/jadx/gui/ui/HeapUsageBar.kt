@@ -45,6 +45,10 @@ class HeapUsageBar : JProgressBar() {
 				}
 			}
 		})
+
+		if (isVisible) {
+			startTimer()
+		}
 	}
 
     override fun setVisible(enabled: Boolean) {
